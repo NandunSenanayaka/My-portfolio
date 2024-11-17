@@ -13,11 +13,11 @@
         <nav>
             <img src="../Assert/logo 2.png" class="logo">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-text">
@@ -143,7 +143,7 @@
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="#" class="btn btn2">Download CV</a>
+                <a href="../Assert/nadun CV .pdf (2).pdf" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -152,9 +152,12 @@
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-                <span id="msg"></span>
+                <span id="msg"> Hello</span>
             </div>
         </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Nadun Senanayaka .Mady By Nadun Senanayaka</p>
     </div>
   </div>
 
@@ -179,6 +182,24 @@
         document.querySelector(`[onclick="opentab('${tabname}')"]`).classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyraecpeUuiV4bxIb0ktw3HHD-wclO7Qs_y2N_XVjlydhR-z2GgcZpRIPlq9YN8npGO/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message Sent Successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
   </script>
 </body>
 </html>
