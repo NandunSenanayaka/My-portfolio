@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Nadun</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="../Assert/logo 2.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm Nadun</h1>
+        </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="../Assert/my image.jpg" alt="My Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio? Quisquam, voluptatibus. Quisquam, voluptatibus.</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Design</span><br>Designing Web is my passion</li>
+                        <li><span>Programming</span><br>Creating efficient code</li>
+                        <li><span>Full Stack Development</span><br>Building scalable systems</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span><br>Bachelor's in Computer Science</li>
+                        <li><span>2022</span><br>Full Stack Developer Certification</li>
+                        <li><span>2023</span><br>Advanced Web Design Course</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio?</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="../Assert/work-1.png">
+                <div class="layer">
+                    <h3>Recruitment System</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio?</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="../Assert/work-2.png">
+                <div class="layer">
+                    <h3>Food Odering System</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio?</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="../Assert/work-3.png">
+                <div class="layer">
+                    <h3>Aurvedic Hostpital Management System</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio?</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+                
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+        
+    </div>
+
+
+  
+
+
+  <script>
+    // Function to switch tabs
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        // Remove active classes from all tab links and contents
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        // Add active classes to the selected tab link and content
+        document.querySelector(`[onclick="opentab('${tabname}')"]`).classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+</body>
+</html>
