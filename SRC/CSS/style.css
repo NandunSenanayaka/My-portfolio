@@ -1,3 +1,22 @@
+header {
+    background: rgba(147, 147, 147, 0.416); /* Semi-transparent blue background */
+    backdrop-filter: blur(10px); /* Adds a slight blur effect */
+    position: fixed; /* Keeps header fixed at the top */
+    width: 100%; /* Full width */
+    z-index: 40; /* Ensures header stays above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  header a {
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  header a:hover {
+    color: #000000; /* Lighter blue for hover effect */
+  }
+  
+
+
 .service-card {
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
