@@ -1,10 +1,19 @@
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-  
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-  
-    alert(`Thank you, ${name}! Your message has been sent.`);
-  });
-  
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".animate-section");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible"); // Add visible class when in view
+          observer.unobserve(entry.target); // Stop observing once it's visible
+        }
+      });
+    },
+    {
+      threshold: 0.2, // Trigger when 20% of the section is visible
+    }
+  );
+
+  sections.forEach(section => observer.observe(section));
+});
