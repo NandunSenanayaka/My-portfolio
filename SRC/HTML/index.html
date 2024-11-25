@@ -1,195 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Nadun</title>
+
   <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <!-- Header -->
-  <div id="header">
-    <div class="container">
-      <nav>
-        <img src="../Assert/logo 2.png" class="logo" alt="Logo">
-        <ul>
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+
+<body class="font-sans text-gray-900 bg-gradient-to-br from-blue-500 via-teal-500 to-purple-500">
+
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-blue-500 to-teal-500 text-white py-6 ">
+    <div class="max-w-screen-xl mx-auto px-6 ">
+      <!-- Navbar Section -->
+      <nav class="flex justify-between items-center">
+        <div class="text-2xl font-semibold">
+          Nadun
+        </div>
+        <ul class="flex space-x-8 text-lg">
+          <li><a href="#home" class="hover:text-blue-300">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-300">About</a></li>
+          <li><a href="#services" class="hover:text-blue-300">Services</a></li>
+          <li><a href="#portfolio" class="hover:text-blue-300">Portfolio</a></li>
+          <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
         </ul>
       </nav>
-      <div class="header-text">
-        <p>UI/UX Designer & Web Developer</p>
-        <h1>Hi, I'm Nadun</h1>
-      </div>
     </div>
-  </div>
+  </header>
 
-  <!-- About Section -->
-  <div id="about" class="section">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="../Assert/my image.jpg" alt="My Image">
-        </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <p>I am keen to learn new things and try to keep myself up to date. I’m determined and I can adapt myself to any situations...</p>
-          <div class="tab-title">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-          </div>
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>Web Design</span><br>Designing Web is my passion</li>
-              <li><span>Programming</span><br>Creating efficient code</li>
-              <li><span>Full Stack Development</span><br>Building scalable systems</li>
+<!-- Home Section -->
+<section id="home" class="py-20 bg-gray-50">
+  <div class="max-w-screen-xl mx-auto px-6">
+    <div class="flex justify-center items-center bg-blue-50 p-8 rounded-2xl shadow-lg">
+      <!-- Text Content -->
+      <div class="w-full lg:w-1/2 text-center lg:text-left ">
+        <h1 class="text-4xl font-semibold text-blue-500 mb-2">UI/UX Designer & Web Developer</h1>
+        <p class="text-4xl text-gray-700">Hi, I'm Nadun</p>
+      </div>
+      <!-- Image on the Right -->
+      <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-50">
+  <div class="max-w-screen-xl mx-auto px-6">
+    <div class="flex flex-col lg:flex-row items-center">
+      <div class="lg:w-1/3 mb-8 lg:mb-0">
+        <img src="../Assert/my image.jpg" alt="My Image" class="w-full rounded-lg shadow-lg">
+      </div>
+      <div class="lg:w-2/3 lg:ml-12 text-center lg:text-left">
+        <h2 class="text-3xl font-semibold text-blue-500 mb-4">About Me</h2>
+        <p class="text-lg leading-relaxed text-gray-700 mb-6">I am keen to learn new things and try to keep myself up to date. I’m determined and I can adapt myself to any situation. I enjoy challenging work environments and tend to give my best.</p>
+
+        <!-- Flex container for Skills and Education -->
+        <div class="flex flex-wrap justify-between">
+          
+          <!-- Skills Section -->
+          <div class="w-full lg:w-5/12 mb-8">
+            <h3 class="text-2xl font-semibold text-blue-500 mb-4">Skills</h3>
+            <ul class="space-y-4 text-gray-700">
+              <li class="flex items-center">
+                <span class="font-semibold w-1/3">UI/UX Design</span>
+                <div class="w-2/3 bg-gray-300 rounded-full">
+                  <div class="bg-blue-500 text-xs leading-none py-1 text-center text-white rounded-full" style="width: 80%;">80%</div>
+                </div>
+              </li>
+              <li class="flex items-center">
+                <span class="font-semibold w-1/3">Web Design</span>
+                <div class="w-2/3 bg-gray-300 rounded-full">
+                  <div class="bg-teal-500 text-xs leading-none py-1 text-center text-white rounded-full" style="width: 75%;">75%</div>
+                </div>
+              </li>
+              <li class="flex items-center">
+                <span class="font-semibold w-1/3">React.js</span>
+                <div class="w-2/3 bg-gray-300 rounded-full">
+                  <div class="bg-yellow-500 text-xs leading-none py-1 text-center text-white rounded-full" style="width: 70%;">70%</div>
+                </div>
+              </li>
+              <li class="flex items-center">
+                <span class="font-semibold w-1/3">HTML/CSS</span>
+                <div class="w-2/3 bg-gray-300 rounded-full">
+                  <div class="bg-purple-500 text-xs leading-none py-1 text-center text-white rounded-full" style="width: 90%;">90%</div>
+                </div>
+              </li>
             </ul>
           </div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>present</span><br>B.SC. (HONS) - INFORMATION TECHNOLOGY AT SLIIT</li>
-              <li><span>2021</span><br>GCE Advanced Level H/Walasmulla National School</li>
-              <li><span>2018</span><br>GCE Ordinary Level H/Walasmulla National School</li>
+
+          <!-- Education Section -->
+          <div class="w-full lg:w-5/12 mb-8">
+            <h3 class="text-2xl font-semibold text-blue-500 mb-4">Education</h3>
+            <ul class="space-y-4 text-gray-700">
+              <li>
+                <h4 class="font-semibold text-lg">Bachelor of Science in Information Technology</h4>
+                <p class="text-gray-600">Sri Lanka Institute of Information Technology (SLIIT)</p>
+                <p class="text-gray-500">Expected Graduation: 2026</p>
+              </li>
+              <li>
+                <h4 class="font-semibold text-lg">High School</h4>
+                <p class="text-gray-600">XYZ High School</p>
+                <p class="text-gray-500">Graduated: 2022</p>
+              </li>
             </ul>
           </div>
+
         </div>
       </div>
     </div>
   </div>
+</section>
+
+
 
   <!-- Services Section -->
-  <div id="services" class="section">
-    <div class="container">
-      <h1 class="sub-title">My Services</h1>
-      <div class="services-list">
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <a href="#">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-crop"></i>
-          <h2>UI/UX</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <a href="#">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-brands fa-app-store"></i>
-          <h2>App Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <a href="#">Learn more</a>
-        </div>
+ <!-- Services Section -->
+<section id="services" class="py-20 bg-gray-100">
+  <div class="max-w-screen-xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">My Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Service Card -->
+      <div class="service-card bg-white p-6 rounded-lg shadow-lg text-center">
+        <h3 class="text-2xl font-semibold mb-4">Web Development</h3>
+        <p class="text-gray-600">I create responsive and interactive websites tailored to your needs.</p>
+      </div>
+      <!-- Service Card -->
+      <div class="service-card bg-white p-6 rounded-lg shadow-lg text-center">
+        <h3 class="text-2xl font-semibold mb-4">UI/UX Design</h3>
+        <p class="text-gray-600">Crafting user-friendly and visually appealing interfaces.</p>
+      </div>
+      <!-- Service Card -->
+      <div class="service-card bg-white p-6 rounded-lg shadow-lg text-center">
+        <h3 class="text-2xl font-semibold mb-4">Graphic Design</h3>
+        <p class="text-gray-600">Delivering eye-catching designs for branding and marketing.</p>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- Portfolio Section -->
-  <div id="portfolio" class="section">
-    <div class="container">
-      <h1 class="sub-title">My Work</h1>
-      <div class="work-list">
-        <div class="work">
-          <img src="../Assert/work-1.png" alt="Work 1">
-          <div class="layer">
-            <h3>Recruitment System</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="../Assert/work-2.png" alt="Work 2">
-          <div class="layer">
-            <h3>Food Ordering System</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="../Assert/work-3.png" alt="Work 3">
-          <div class="layer">
-            <h3>Aurvedic Hospital Management System</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
+
+<!-- Portfolio Section -->
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20 bg-gray-50">
+  <div class="max-w-screen-xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold text-blue-500 mb-12">My Work</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Portfolio Item 1 -->
+      <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg">
+        <img src="../Assert/work-1.png" alt="Work 1" class="w-full h-60 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-2xl font-semibold mb-2">Recruitment System</h3>
+          <p class="text-gray-300 mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#" class="px-6 py-2 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">View Project</a>
         </div>
       </div>
-      <a href="#" class="btn">See more</a>
+      <!-- Portfolio Item 2 -->
+      <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg">
+        <img src="../Assert/work-2.png" alt="Work 2" class="w-full h-60 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-2xl font-semibold mb-2">Food Ordering System</h3>
+          <p class="text-gray-300 mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#" class="px-6 py-2 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">View Project</a>
+        </div>
+      </div>
+      <!-- Portfolio Item 3 -->
+      <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg">
+        <img src="../Assert/work-3.png" alt="Work 3" class="w-full h-60 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-2xl font-semibold mb-2">Ayurvedic Hospital System</h3>
+          <p class="text-gray-300 mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#" class="px-6 py-2 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">View Project</a>
+        </div>
+      </div>
     </div>
+    <button class="mt-10 px-8 py-3 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">See More</button>
   </div>
+</section>
+
+
 
   <!-- Contact Section -->
-  <div id="contact" class="section">
-    <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h1 class="sub-title">Contact Me</h1>
-          <p><i class="fa-solid fa-paper-plane"></i> nandunsenanayaka21@gmail.com</p>
-          <p><i class="fa-solid fa-phone"></i> 070 5521 889</p>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/nandun.senanayaka.50" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://github.com/NandunSenanayaka" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/nandun-senanayaka-40b664314" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-screen-xl mx-auto px-6 text-center ">
+      <h2 class="text-3xl font-semibold text-blue-500 mb-12">Contact Me</h2>
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 mb-8 lg:mb-0">
+          <p class="text-lg mb-4 ">Email: nandunsenanayaka21@gmail.com</p>
+          <p class="text-lg mb-4">Phone: 070 5521 889</p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-blue-500 hover:text-blue-300">LinkedIn</a>
+            <a href="#" class="text-blue-500 hover:text-blue-300">GitHub</a>
+            <a href="#" class="text-blue-500 hover:text-blue-300">Twitter</a>
           </div>
-          <a href="../Assert/nadun CV .pdf (2).pdf" class="btn btn2">Download CV</a>
         </div>
-        <div class="contact-right">
-          <form name="submit-to-google-sheet">
-            <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="email" name="Email" placeholder="Your Email" required>
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-          <span id="msg">Hello</span>
-        </div>
+        <form class="lg:w-1/2">
+          <input type="text" placeholder="Your Name" class="w-full px-6 py-3 mb-4 bg-gray-200 rounded-lg">
+          <input type="email" placeholder="Your Email" class="w-full px-6 py-3 mb-4 bg-gray-200 rounded-lg">
+          <textarea placeholder="Your Message" class="w-full px-6 py-3 mb-4 bg-gray-200 rounded-lg"></textarea>
+          <button class="w-full py-3 text-white bg-blue-500 rounded-full hover:bg-blue-600">Send Message</button>
+        </form>
       </div>
     </div>
-    <div class="copyright">
-      <p>Copyright @ Nadun Senanayaka . Made By Nadun Senanayaka</p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="text-center">
+      <p>&copy; 2024 Nadun. Made By Nadun Senanayaka.</p>
     </div>
-  </div>
+  </footer>
 
-  <!-- Scripts -->
-  <script>
-    // Function to switch tabs
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname) {
-      // Remove active classes from all tab links and contents
-      for (let tablink of tablinks) {
-        tablink.classList.remove("active-link");
-      }
-      for (let tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-      }
-      // Add active classes to the selected tab
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-    }
-
-    // Intersection Observer to trigger animation on scroll
-    const sections = document.querySelectorAll('.section');
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible'); // Add the class when section is in view
-                observer.unobserve(entry.target); // Stop observing after the section is visible
-            }
-        });
-    }, { threshold: 0.5 }); // Trigger when 50% of the section is in the viewport
-
-    // Observe each section
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-  </script>
 </body>
+
 </html>
