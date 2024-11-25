@@ -1,13 +1,14 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
-  }
-  html{
-    scroll-behavior: smooth;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
   
   body {
     
@@ -75,6 +76,30 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff004f;
 }
+/* Define the animation */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to the header text */
+.header-text p {
+    font-size: 1.5rem;
+    animation: fadeInText 2s ease-out;
+    animation-delay: 0.5s; /* Delay the animation slightly */
+}
+
+
+
+
+
+
 
 
 
@@ -328,3 +353,76 @@ form .btn2{
     font-weight: 300;
     margin-top: 20px;
 }
+
+
+/*animation*/
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 5px 10px;
+    }
+    .header-text {
+        font-size: 20px;
+    }
+    .header-text h1 {
+        font-size: 40px;
+    }
+}
+
+a:hover {
+    color: #ff004f;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+
+
+
+ /* Header text animation */
+ @keyframes headerTextAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Add animation to header text */
+  .header-text p {
+    opacity: 0;
+    animation: headerTextAnimation 1s forwards;
+    animation-delay: 0.5s;
+  }
+
+  .header-text h1 {
+    opacity: 0;
+    animation: headerTextAnimation 1s forwards;
+    animation-delay: 1s;
+  }
+
+  /* Section fade-in animation */
+  @keyframes fadeInSection {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply animation to sections */
+  .section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-in-out;
+  }
+
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }

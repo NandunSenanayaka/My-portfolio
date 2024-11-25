@@ -5,218 +5,191 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Nadun</title>
   <link rel="stylesheet" href="../CSS/style.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  
 
 </head>
 <body>
   <!-- Header -->
   <div id="header">
     <div class="container">
-        <nav>
-            <img src="../Assert/logo 2.png" class="logo">
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>UI/UX Designer & Web Developer</p>
-            <h1>Hi, I'm Nadun</h1>
-        </div>
+      <nav>
+        <img src="../Assert/logo 2.png" class="logo" alt="Logo">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer & Web Developer</p>
+        <h1>Hi, I'm Nadun</h1>
+      </div>
     </div>
   </div>
 
   <!-- About Section -->
-  <div id="about">
+  <div id="about" class="section">
     <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="../Assert/my image.jpg" alt="My Image">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>I am keen to learn new
-                    things and try to keep myself
-                    up to date. I’m determined
-                    and I can adapt myself to
-                    any situations. I enjoyed
-                    challenging work
-                    environments and tended to
-                    give my best.</p>
-
-                <div class="tab-title">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Web Design</span><br>Designing Web is my passion</li>
-                        <li><span>Programming</span><br>Creating efficient code</li>
-                        <li><span>Full Stack Development</span><br>Building scalable systems</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>present</span><br>B.SC. (HONS) - INFORMATION
-                            TECHNOLOGY AT SLIIT 
-                            </li>
-                        <li><span>2021</span><br>GCE Advanced Level
-                            H/Walasmulla Nationa School
-                            </li>
-                        <li><span>2018</span><br>GCE Ordinary Level  H/Walasmulla Nationa School</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="row">
+        <div class="about-col-1">
+          <img src="../Assert/my image.jpg" alt="My Image">
         </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am keen to learn new things and try to keep myself up to date. I’m determined and I can adapt myself to any situations...</p>
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Design</span><br>Designing Web is my passion</li>
+              <li><span>Programming</span><br>Creating efficient code</li>
+              <li><span>Full Stack Development</span><br>Building scalable systems</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>present</span><br>B.SC. (HONS) - INFORMATION TECHNOLOGY AT SLIIT</li>
+              <li><span>2021</span><br>GCE Advanced Level H/Walasmulla National School</li>
+              <li><span>2018</span><br>GCE Ordinary Level H/Walasmulla National School</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div id="services">
+  <!-- Services Section -->
+  <div id="services" class="section">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio?</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>UI/UX</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio?</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio?</p>
-                <a href="#">Learn more</a>
-            </div>
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#">Learn more</a>
         </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>UI/UX</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div id="portfolio">
+  <!-- Portfolio Section -->
+  <div id="portfolio" class="section">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="../Assert/work-1.png">
-                <div class="layer">
-                    <h3>Recruitment System</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio?</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-                </div>
-                
-            </div>
-            <div class="work">
-                <img src="../Assert/work-2.png">
-                <div class="layer">
-                    <h3>Food Odering System</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio?</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-                </div>
-                
-            </div>
-            <div class="work">
-                <img src="../Assert/work-3.png">
-                <div class="layer">
-                    <h3>Aurvedic Hostpital Management System</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, optio?</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-                </div>
-                
-            </div>
-            
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="../Assert/work-1.png" alt="Work 1">
+          <div class="layer">
+            <h3>Recruitment System</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
         </div>
-        <a href="#" class="btn">See more</a>
-        
+        <div class="work">
+          <img src="../Assert/work-2.png" alt="Work 2">
+          <div class="layer">
+            <h3>Food Ordering System</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="../Assert/work-3.png" alt="Work 3">
+          <div class="layer">
+            <h3>Aurvedic Hospital Management System</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
     </div>
-
   </div>
 
-
-  <div id="contact">
+  <!-- Contact Section -->
+  <div id="contact" class="section">
     <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> nandunsenanayaka21@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> 070 5521 889</p>
-                <div class="social-icons">      
-                    <a href="https://www.facebook.com/nandun.senanayaka.50?mibextid=ZbWKwL" target="_blank" ><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://github.com/NandunSenanayaka" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="www.linkedin.com/in/nandun-senanayaka-40b664314" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-             
-                <a href="../Assert/nadun CV .pdf (2).pdf" class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"> Hello</span>
-            </div>
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> nandunsenanayaka21@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 070 5521 889</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/nandun.senanayaka.50" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/NandunSenanayaka" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nandun-senanayaka-40b664314" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="../Assert/nadun CV .pdf (2).pdf" class="btn btn2">Download CV</a>
         </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg">Hello</span>
+        </div>
+      </div>
     </div>
     <div class="copyright">
-        <p>Copyright @ Nadun Senanayaka .Mady By Nadun Senanayaka</p>
+      <p>Copyright @ Nadun Senanayaka . Made By Nadun Senanayaka</p>
     </div>
   </div>
 
-
-  
-
-
+  <!-- Scripts -->
   <script>
     // Function to switch tabs
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
     function opentab(tabname) {
-        // Remove active classes from all tab links and contents
-        for (let tablink of tablinks) {
-            tablink.classList.remove("active-link");
-        }
-        for (let tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
-
-        // Add active classes to the selected tab link and content
-        document.querySelector(`[onclick="opentab('${tabname}')"]`).classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+      // Remove active classes from all tab links and contents
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      // Add active classes to the selected tab
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
     }
-  </script>
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyraecpeUuiV4bxIb0ktw3HHD-wclO7Qs_y2N_XVjlydhR-z2GgcZpRIPlq9YN8npGO/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-          msg.innerHTML = "Message Sent Successfully"
-          setTimeout(function(){
-            msg.innerHTML = ""
-          },5000)
-          form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
+
+    // Intersection Observer to trigger animation on scroll
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); // Add the class when section is in view
+                observer.unobserve(entry.target); // Stop observing after the section is visible
+            }
+        });
+    }, { threshold: 0.5 }); // Trigger when 50% of the section is in the viewport
+
+    // Observe each section
+    sections.forEach(section => {
+        observer.observe(section);
+    });
   </script>
 </body>
 </html>
