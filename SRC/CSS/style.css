@@ -30,6 +30,19 @@ header {
 
 }
 
+/* Home Section Background */
+.home-section {
+  background-image: url('../Assert/background\ 2.png'); /* Path to your background image */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Center content vertically and horizontally */
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text */
+}
 
 
 
