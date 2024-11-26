@@ -8,10 +8,19 @@
 
   <link rel="stylesheet" href="../CSS/style.css">
 
-  <script src="../JS/script.js"></script>
+  <script src="../JS/script.js" defer></script>
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+
 
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Add Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 
 
 
@@ -61,6 +70,8 @@
       </div>
       <!-- Image on the Right -->
       <div class="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
+        
+
        
       </div>
     </div>
@@ -70,10 +81,13 @@
 
 
 
+
+
+
   
 
 <!-- About Section -->
-<section id="about" class="py-20 bg-gray-50 nimate-section">
+<section id="about" class="py-20 bg-gray-50 animate-section">
   <div class="max-w-screen-xl mx-auto px-6">
     <div class="flex flex-col lg:flex-row items-center">
       <div class="lg:w-1/3 mb-8 lg:mb-0">
@@ -114,6 +128,12 @@
                   <div class="bg-purple-500 text-xs leading-none py-1 text-center text-white rounded-full" style="width: 90%;">90%</div>
                 </div>
               </li>
+              <li class="flex items-center">
+                <span class="font-semibold w-1/3">Photoshop</span>
+                <div class="w-2/3 bg-gray-300 rounded-full">
+                  <div class="bg-red-500 text-xs leading-none py-1 text-center text-white rounded-full" style="width: 90%;">90%</div>
+                </div>
+              </li>
             </ul>
           </div>
 
@@ -142,13 +162,28 @@
       </div>
     </div>
   </div>
+
+   <!-- Icons for Technologies -->
+ <div class="tech-icons">
+  <i class="fab fa-photoshop" title="Photoshop"></i>
+  <i class="fab fa-js-square" title="JavaScript"></i>
+  <i class="fab fa-react" title="React"></i>
+  <i class="fab fa-html5" title="HTML5"></i>
+  <i class="fab fa-css3-alt" title="CSS3"></i>
+</div>
+
+
 </section>
+
+
+
+
 
 
 
   <!-- Services Section -->
  <!-- Services Section -->
-<section id="services" class="py-20 bg-gray-100 nimate-section">
+<section id="services" class="py-20 bg-gray-100 animate-section">
   <div class="max-w-screen-xl mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-10">My Services</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -182,13 +217,18 @@
 
 
 <!-- Portfolio Section -->
-<section id="portfolio" class="py-20 bg-gray-50 nimate-section">
+<section id="portfolio" class="py-20 bg-gray-50 animate-section">
   <div class="max-w-screen-xl mx-auto px-6 text-center">
     <h2 class="text-4xl font-bold text-blue-500 mb-12">My Work</h2>
 
-    <h4 class="text-2xl font-bold text-black-500 mb-12 ">Uni Projects</h4>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      
+    <!-- Project Categories -->
+    <div class="mb-10">
+      <button id="uni-projects" class="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">Uni Projects</button>
+      <button id="uiux-design" class="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition ml-4">UI/UX Design</button>
+    </div>
+
+    <!-- Uni Projects Section -->
+    <div id="uni-projects-section" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
       <!-- Portfolio Item 1 -->
       <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg">
         <img src="../Assert/work-1.png" alt="Work 1" class="w-full h-60 object-cover">
@@ -217,9 +257,44 @@
         </div>
       </div>
     </div>
+
+    <!-- UI/UX Design Section (Hidden by Default) -->
+    <div id="uiux-design-section" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 hidden">
+      <!-- Portfolio Item 1 -->
+      <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg">
+        <img src="../Assert/uiux1.png" alt="UI/UX Design 1" class="w-full h-60 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-2xl font-semibold mb-2">UI/UX Design Project 1</h3>
+          <p class="text-gray-300 mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#" class="px-6 py-2 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">View Project</a>
+        </div>
+      </div>
+      <!-- Portfolio Item 2 -->
+      <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg">
+        <img src="../Assert/uiux2.png" alt="UI/UX Design 2" class="w-full h-60 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-2xl font-semibold mb-2">UI/UX Design Project 2</h3>
+          <p class="text-gray-300 mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#" class="px-6 py-2 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">View Project</a>
+        </div>
+      </div>
+      <!-- Portfolio Item 3 -->
+      <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg">
+        <img src="../Assert/uiux3.png" alt="UI/UX Design 3" class="w-full h-60 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-2xl font-semibold mb-2">UI/UX Design Project 3</h3>
+          <p class="text-gray-300 mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#" class="px-6 py-2 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">View Project</a>
+        </div>
+      </div>
+    </div>
+
     <button class="mt-10 px-8 py-3 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">See More</button>
   </div>
 </section>
+
+
+
 
 
 
@@ -245,7 +320,7 @@
         <!-- Address Box -->
         <div class="bg-blue-500 bg-opacity-100 p-4 rounded-md inline-block w-full hover:bg-blue-600 transition">
           <p class="text-lg font-semibold">Address:</p>
-          <p class="text-lg">Colombo, Sri Lanka</p>
+          <p class="text-lg">912/3/2 , pannipitiye road , Battaramulle</p>
         </div>
 
         <!-- Social Media Links Section -->

@@ -17,3 +17,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sections.forEach(section => observer.observe(section));
 });
+
+
+  // JavaScript to toggle between the two project categories
+  document.getElementById('uni-projects').addEventListener('click', function() {
+    document.getElementById('uni-projects-section').classList.remove('hidden');
+    document.getElementById('uiux-design-section').classList.add('hidden');
+  });
+
+  document.getElementById('uiux-design').addEventListener('click', function() {
+    document.getElementById('uiux-design-section').classList.remove('hidden');
+    document.getElementById('uni-projects-section').classList.add('hidden');
+  });
+
+
+
+
+
+

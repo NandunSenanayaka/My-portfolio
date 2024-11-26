@@ -140,3 +140,46 @@ header {
     transform: translateY(0); /* Move to its original position */
   }
   
+
+
+  /* Style for the icons */
+  .tech-icons {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.tech-icons i {
+    font-size: 50px;
+    margin: 10px;
+    color: #333;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.tech-icons i:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Style for Progress Bar Container */
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Style for the Progress Bar */
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    border-radius: 5px;
+    transition: width 2s ease-in-out;
+}
+
+/* About Me Section */
+#about-me {
+    margin-top: 50px;
+}
