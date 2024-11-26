@@ -1,3 +1,8 @@
+/* Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 header {
     background: rgba(147, 147, 147, 0.416); /* Semi-transparent blue background */
     backdrop-filter: blur(10px); /* Adds a slight blur effect */
@@ -15,6 +20,42 @@ header {
     color: #000000; /* Lighter blue for hover effect */
   }
   
+  /* Home Section */
+#home {
+  min-height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+
+
+}
+
+
+
+
+
+/* Home Section animation */
+@keyframes text-flicker {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+.animated-title {
+  display: inline-block;
+  animation: text-flicker 3s infinite ease-in-out;
+}
+
+
 
 
 .service-card {

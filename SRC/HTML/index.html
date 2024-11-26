@@ -8,16 +8,23 @@
 
   <link rel="stylesheet" href="../CSS/style.css">
 
-  <link rel="js" href="../JS/script.js">
+  <script src="../JS/script.js"></script>
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+
+
 
 
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-sans text-gray-900 bg-gradient-to-br from-blue-500 via-teal-500 to-purple-500">
+<body class="font-sans text-gray-900 bg-gradient-to-br from-gray-500 via-teal-500 to-purple-500 ">
 
   <!-- Header Section -->
-  <header class="bg-white-500 bg-opacity-90 text-white py-6 fixed w-full z-50 shadow-lg">
+  <header class="bg-white-500 bg-opacity-90 text-white py-5 fixed w-full z-50 shadow-lg">
     <div class="max-w-screen-xl mx-auto px-6">
       <!-- Navbar Section -->
       <nav class="flex justify-between items-center">
@@ -37,29 +44,31 @@
   
 
 <!-- Home Section -->
-<section id="home" class="py-20">
+<!-- Home Section -->
+<section id="home">
   <div class="max-w-screen-xl mx-auto px-6">
-    <div class="flex justify-center items-center bg-blue-50 p-8 rounded-2xl shadow-lg">
+    <div class="flex justify-center items-center bg-white-50 p-8 rounded-2xl border-4 border-gray-300">
       <!-- Text Content -->
-      <div class="w-full lg:w-1/2 text-center lg:text-left">
-        <h1 class="text-4xl font-semibold text-blue-500 mb-2">UI/UX Designer & Web Developer</h1>
-        <p class="text-4xl text-gray-700">Hi, I'm Nadun</p>
+      <div class="w-full lg:w-2/4 text-center lg:text-left">
+        <h1 class="text-7xl font-semibold text-white mb-40 animated-title">UI/UX Designer & Web Developer</h1>
+        <h3 class="text-4xl text-gray-700">Hi, I'm Nadun Senanayaka</h3>
         <!-- Download CV Button -->
         <div class="mt-6">
-          <a href="../Assert/nadun CV .pdf (2).pdf" download="Nadun_CV" class="inline-block bg-blue-500 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-blue-600 transition">
+          <a href="../Assert/nadun CV .pdf (2).pdf" download="Nadun_CV" class="inline-block bg-blue-500 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-blue-600 transition ">
             Download CV
           </a>
         </div>
       </div>
       <!-- Image on the Right -->
-      <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
-
-        <!-- Image goes here -->
-        
+      <div class="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
+       
       </div>
     </div>
   </div>
 </section>
+
+
+
 
   
 
@@ -139,32 +148,43 @@
   <div class="max-w-screen-xl mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-10">My Services</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
       <!-- Service Card -->
       <div class="service-card bg-white p-6 rounded-lg shadow-lg text-center">
+        <i class="fas fa-laptop-code text-4xl text-blue-500 mb-4"></i>
         <h3 class="text-2xl font-semibold mb-4">Web Development</h3>
         <p class="text-gray-600">I create responsive and interactive websites tailored to your needs.</p>
       </div>
+
+   
       <!-- Service Card -->
       <div class="service-card bg-white p-6 rounded-lg shadow-lg text-center">
+        <i class="fas fa-paint-brush text-4xl text-blue-500 mb-4"></i>
         <h3 class="text-2xl font-semibold mb-4">UI/UX Design</h3>
         <p class="text-gray-600">Crafting user-friendly and visually appealing interfaces.</p>
       </div>
+
+     
       <!-- Service Card -->
       <div class="service-card bg-white p-6 rounded-lg shadow-lg text-center">
+        <i class="fas fa-laptop text-4xl text-blue-500 mb-4"></i> <!-- Photoshop-like icon -->
         <h3 class="text-2xl font-semibold mb-4">Graphic Design</h3>
         <p class="text-gray-600">Delivering eye-catching designs for branding and marketing.</p>
       </div>
+
     </div>
   </div>
 </section>
 
 
 <!-- Portfolio Section -->
-<!-- Portfolio Section -->
 <section id="portfolio" class="py-20 bg-gray-50 nimate-section">
   <div class="max-w-screen-xl mx-auto px-6 text-center">
     <h2 class="text-4xl font-bold text-blue-500 mb-12">My Work</h2>
+
+    <h4 class="text-2xl font-bold text-black-500 mb-12 ">Uni Projects</h4>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      
       <!-- Portfolio Item 1 -->
       <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg">
         <img src="../Assert/work-1.png" alt="Work 1" class="w-full h-60 object-cover">
@@ -199,29 +219,71 @@
 
 
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-white nimate-section">
-    <div class="max-w-screen-xl mx-auto px-6 text-center ">
-      <h2 class="text-3xl font-semibold text-blue-500 mb-12">Contact Me</h2>
-      <div class="flex flex-col lg:flex-row items-center">
-        <div class="lg:w-1/2 mb-8 lg:mb-0">
-          <p class="text-lg mb-4 ">Email: nandunsenanayaka21@gmail.com</p>
-          <p class="text-lg mb-4">Phone: 070 5521 889</p>
-          <div class="flex space-x-6">
-            <a href="#" class="text-blue-500 hover:text-blue-300">LinkedIn</a>
-            <a href="#" class="text-blue-500 hover:text-blue-300">GitHub</a>
-            <a href="#" class="text-blue-500 hover:text-blue-300">Twitter</a>
+ <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-100 text-white">
+  <div class="max-w-screen-xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-semibold text-blue-500 mb-12">Contact Me</h2>
+    <div class="flex flex-col lg:flex-row items-start space-y-8 lg:space-y-0 lg:space-x-12">
+
+      <!-- Contact Info Section -->
+      <div class="lg:w-1/3 space-y-4">
+        <!-- Email Box (Clickable) -->
+        <div class="bg-blue-500 bg-opacity-100 p-4 rounded-md inline-block w-full hover:bg-blue-600 transition">
+          <p class="text-lg font-semibold">Email:</p>
+          <p class="text-lg"><a href="mailto:nandunsenanayaka21@gmail.com" class="text-white hover:text-gray-300">nandunsenanayaka21@gmail.com</a></p>
+        </div>
+        <!-- Phone Box -->
+        <div class="bg-blue-500 bg-opacity-100 p-4 rounded-md inline-block w-full hover:bg-blue-600 transition">
+          <p class="text-lg font-semibold">Phone:</p>
+          <p class="text-lg">070 5521 889</p>
+        </div>
+        <!-- Address Box -->
+        <div class="bg-blue-500 bg-opacity-100 p-4 rounded-md inline-block w-full hover:bg-blue-600 transition">
+          <p class="text-lg font-semibold">Address:</p>
+          <p class="text-lg">Colombo, Sri Lanka</p>
+        </div>
+
+        <!-- Social Media Links Section -->
+        <div class="space-y-4 mt-8">
+          <p class="text-lg font-semibold text-blue-500">Connect With Me:</p>
+          <div class="flex space-x-6 justify-center">
+            <!-- Social Media Icons -->
+            <a href="#" class="text-blue-500 border border-blue-500 p-3 rounded-md hover:bg-gray-300 hover:text-blue transition">
+              <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
+            </a>
+            <a href="#" class="text-blue-500 border border-blue-500 p-3 rounded-md hover:bg-gray-300 hover:text-blue transition">
+              <i class="fab fa-github"></i> <!-- GitHub Icon -->
+            </a>
+            <a href="#" class="text-blue-500 border border-blue-500 p-3 rounded-md hover:bg-gray-300 hover:text-blue transition">
+              <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
+            </a>
+            <a href="#" class="text-blue-500 border border-blue-500 p-3 rounded-md hover:bg-gray-300 hover:text-blue transition">
+              <i class="fab fa-facebook"></i> <!-- Facebook Icon -->
+            </a>
           </div>
         </div>
-        <form class="lg:w-1/2">
-          <input type="text" placeholder="Your Name" class="w-full px-6 py-3 mb-4 bg-gray-200 rounded-lg">
-          <input type="email" placeholder="Your Email" class="w-full px-6 py-3 mb-4 bg-gray-200 rounded-lg">
-          <textarea placeholder="Your Message" class="w-full px-6 py-3 mb-4 bg-gray-200 rounded-lg"></textarea>
-          <button class="w-full py-3 text-white bg-blue-500 rounded-full hover:bg-blue-600">Send Message</button>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="lg:w-2/3">
+        <form action="#" method="POST" class="space-y-4">
+          <input type="text" name="name" placeholder="Your Name" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500" required>
+          <input type="email" name="email" placeholder="Your Email" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500" required>
+          <textarea name="message" placeholder="Your Message" rows="5" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500" required></textarea>
+          <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-3 px-6 rounded-md hover:bg-black-600 transition">Send Message</button>
         </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+
+
+
+
 
   <!-- Footer Section -->
   <footer class="bg-gray-800 text-white py-6">
