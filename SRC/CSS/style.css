@@ -32,7 +32,7 @@ header {
 
 /* Home Section Background */
 .home-section {
-  background-image: url('../Assert/background\ 2.png'); /* Path to your background image */
+  background-image: url('../Assert/background\ 3.png'); /* Path to your background image */
   background-size: cover; /* Ensure the image covers the entire section */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */

@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
+
   // JavaScript to toggle between the two project categories
   document.getElementById('uni-projects').addEventListener('click', function() {
     document.getElementById('uni-projects-section').classList.remove('hidden');
@@ -30,6 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('uni-projects-section').classList.add('hidden');
   });
 
+
+  document.getElementById('menu-toggle').addEventListener('click', () => {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('hidden');
+  });
+  
 
 
 
