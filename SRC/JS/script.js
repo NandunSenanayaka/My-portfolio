@@ -23,22 +23,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // JavaScript to toggle between the two project categories
-  document.getElementById('uni-projects').addEventListener('click', function() {
-    document.getElementById('uni-projects-section').classList.remove('hidden');
-    document.getElementById('uiux-design-section').classList.add('hidden');
-  });
-
-  document.getElementById('uiux-design').addEventListener('click', function() {
-    document.getElementById('uiux-design-section').classList.remove('hidden');
-    document.getElementById('uni-projects-section').classList.add('hidden');
-  });
-
-
-  document.getElementById('menu-toggle').addEventListener('click', () => {
-    const menu = document.getElementById('menu');
-    menu.classList.toggle('hidden');
+  document.addEventListener("DOMContentLoaded", () => {
+    const uniProjectsButton = document.getElementById("uni-projects");
+    const uiuxDesignButton = document.getElementById("uiux-design");
+    const graphicDesignButton = document.getElementById("graphic-design");
+  
+    const uniProjectsSection = document.getElementById("uni-projects-section");
+    const uiuxDesignSection = document.getElementById("uiux-design-section");
+    const graphicDesignSection = document.getElementById("graphic-design-section");
+  
+    uniProjectsButton.addEventListener("click", () => {
+      uniProjectsSection.classList.remove("hidden");
+      uiuxDesignSection.classList.add("hidden");
+      graphicDesignSection.classList.add("hidden");
+    });
+  
+    uiuxDesignButton.addEventListener("click", () => {
+      uniProjectsSection.classList.add("hidden");
+      uiuxDesignSection.classList.remove("hidden");
+      graphicDesignSection.classList.add("hidden");
+    });
+  
+    graphicDesignButton.addEventListener("click", () => {
+      uniProjectsSection.classList.add("hidden");
+      uiuxDesignSection.classList.add("hidden");
+      graphicDesignSection.classList.remove("hidden");
+    });
   });
   
+  
+
 
 
 

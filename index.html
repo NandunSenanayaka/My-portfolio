@@ -23,6 +23,10 @@
     <!-- Add Font Awesome for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+      
+
 
 
 
@@ -98,7 +102,7 @@
   
 
 <!-- About Section -->
-<section id="about" class="py-20 bg-gray-50 animate-section">
+<section id="about" class="py-20 bg-gray-50 animate-section " >
   <div class="max-w-screen-xl mx-auto px-6">
     <div class="flex flex-col lg:flex-row items-center">
       <div class="lg:w-1/3 mb-8 lg:mb-0">
@@ -181,6 +185,7 @@
   <i class="fab fa-react" title="React"></i>
   <i class="fab fa-html5" title="HTML5"></i>
   <i class="fab fa-css3-alt" title="CSS3"></i>
+  
 </div>
 
 
@@ -194,7 +199,7 @@
 
   <!-- Services Section -->
  <!-- Services Section -->
-<section id="services" class="py-20 bg-gray-100 animate-section">
+<section id="services" class="py-20 bg-gray-100 animate-section " >
   <div class="max-w-screen-xl mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-10">My Services</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -228,7 +233,7 @@
 
 
 <!-- Portfolio Section -->
-<section id="portfolio" class="py-20 bg-gray-50 animate-section">
+<section id="portfolio" class="py-20 bg-gray-50 animate-section " >
   <div class="max-w-screen-xl mx-auto px-6 text-center">
     <h2 class="text-4xl font-bold text-blue-500 mb-12">My Work</h2>
 
@@ -236,14 +241,15 @@
     <div class="mb-10">
       <button id="uni-projects" class="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">Uni Projects</button>
       <button id="uiux-design" class="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition ml-4">UI/UX Design</button>
+      <button id="graphic-design" class="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition ml-4">Graphic Design</button>
     </div>
 
     <!-- Uni Projects Section -->
     <div id="uni-projects-section" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
       <!-- Portfolio Item 1 -->
-      <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg">
+      <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg" >
         <img src="./SRC/Assert/work-1.png" alt="Work 1" class="w-full h-60 object-cover">
-        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity" >
           <h3 class="text-white text-2xl font-semibold mb-2">Recruitment System</h3>
           <p class="text-gray-300 mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           <a href="#" class="px-6 py-2 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">View Project</a>
@@ -299,6 +305,39 @@
         </div>
       </div>
     </div>
+
+    <!-- Graphic Design Section -->
+    <div id="graphic-design-section" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 hidden">
+      <!-- Portfolio Item 1 -->
+      <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg">
+        <img src="./SRC/Assert/tea packet n.png" alt="Graphic Design 1" class="w-full h-60 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-2xl font-semibold mb-2">Tea packet Design</h3>
+          <p class="text-gray-300 mb-4 text-center">Creative and modern poster design for branding.</p>
+          <a href="#" class="px-6 py-2 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">View Project</a>
+        </div>
+      </div>
+      <!-- Portfolio Item 2 -->
+      <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg">
+        <img src="./SRC/Assert/sinhala 1.png" alt="Graphic Design 2" class="w-full h-60 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-2xl font-semibold mb-2">Cover Design</h3>
+          <p class="text-gray-300 mb-4 text-center">Custom logo design for businesses and projects.</p>
+          <a href="#" class="px-6 py-2 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">View Project</a>
+        </div>
+      </div>
+      <!-- Graphic Design Item 3 -->
+      <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg">
+        <img src="./SRC/Assert/product.png" alt="Graphic Design 3" class="w-full h-60 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <h3 class="text-white text-2xl font-semibold mb-2">Product Box Design</h3>
+          <p class="text-gray-300 mb-4 text-center">An amazing graphic design project showcasing creativity and skills.</p>
+          <a href="#" class="px-6 py-2 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">View Project</a>
+        </div>
+      </div>
+      
+    </div>
+    
 
     <button class="mt-10 px-8 py-3 text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">See More</button>
   </div>
