@@ -3,6 +3,21 @@ html {
   scroll-behavior: smooth;
 }
 
+#logo {
+  transition: transform 0.3s ease-in-out;
+}
+
+#logo:hover {
+  transform: scale(1.2); /* Scale up to 120% on hover */
+}
+
+#logo:hover {
+  transform: scale(1.2);
+  shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+
+
 header {
     background: rgba(147, 147, 147, 0.416); /* Semi-transparent blue background */
     backdrop-filter: blur(10px); /* Adds a slight blur effect */
